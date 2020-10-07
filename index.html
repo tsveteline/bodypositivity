@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>caniwearabikinitoday.com</title>
     <link
-      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <style>
     body {
-      background-color: #e6e6fa;
+      background-color: lavender;
       font-family: 'Roboto Slab', serif;
       display: flex;
       align-items: center;
       flex-direction: column;
       height: 100vh;
-      box-sizing: border-box;
-      margin: 0;
       justify-content: center;
     }
 
@@ -30,79 +24,13 @@
       font-size: 70px;
       margin-bottom: 70px;
     }
-
-    .question-button ion-icon {
-      color: #a6a6ed;
-      font-size: 52px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position:absolute;
-      top: 0px;
-      margin: 24px;
-      right: 0;
-    }
-
-    .modal {
-      position: absolute;
-      background-color: white;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      padding: 24px;
-      box-sizing: border-box;
-      overflow: scroll;
-    }
-
-    .close-button {
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      position: absolute;
-      right: 24px;
-    }
-
-    @media only screen and (min-width: 768px) {
-      .modal {
-        width: 45vw;
-        height: 40vw;
-        top: 0;
-        position: absolute;
-        top: 15vh;
-      }
-    }
   </style>
   <body>
-    <div class="question-button" id="question-button">
-      <ion-icon name="help-circle"></ion-icon>
-    </div>
-    <div class="modal" id="question-modal" style="display: none;">
-      <ion-icon size='large' class="close-button" id="close-modal" name="close-outline"></ion-icon>
-      <h2>About this site</h2>
-      <p>It does not matter who you are or how you look. You should be able to wear whatever you want if it makes you feel good. Enough with shaming people because of how they look.</p>
-    </div>
-    <div>
-      <h1>YES</h1>
-      <p>
-        You can wear it whenever you want, and it doesn't matter who you are or
-        how you look. You go get 'em!
-      </p>
-    </div>
-    <script>
-      const questionModal = document.getElementById('question-modal');
-      const questionButton = document.getElementById('question-button');
-      const closeModal = document.getElementById('close-modal');
-      const toggleModal = () => {
-        if (questionModal.style.display === 'none') {
-          return (questionModal.style.display = 'block');
-        }
-        return (questionModal.style.display = 'none');
-      };
-
-      questionButton.addEventListener('click', toggleModal);
-      closeModal.addEventListener('click', toggleModal);
-    </script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
+    <h1>YES</h1>
+    <p>
+      You can wear it whenever you want, and it doesn't matter who you are or
+      how you look. You go get 'em!
+    </p>
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
     <script>
       (function (f, a, t, h, o, m) {
